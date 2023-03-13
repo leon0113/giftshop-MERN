@@ -23,7 +23,7 @@ const Header = () => {
     return (
         <>
             <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-                <div className="container-fluid" style={{ backgroundColor: "orange" }}>
+                <div className="container-fluid" style={{ backgroundColor: "white" }}>
                     <button
                         className="navbar-toggler"
                         type="button"
