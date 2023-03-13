@@ -99,37 +99,56 @@ const Header = () => {
                             ) : (
                                 <>
                                     <li className="nav-item dropdown ">
-                                        <NavLink
-                                            className="nav-link dropdown-toggle "
-                                            href="#"
+                                        <NavLink className="nav-link dropdown-toggle"
+
+                                            id="navbarDropdown"
                                             role="button"
+                                            data-toggle="dropdown"
+                                            aria-haspopup="true"
+                                            aria-expanded="false"
+
+                                            href="#"
+
                                             data-bs-toggle="dropdown dropdown-toggle"
                                             style={{ border: "none" }}
                                         >
                                             {auth?.user?.name}
                                         </NavLink>
-                                        {/* <ul className="dropdown-menu">
+                                        <ul className="dropdown-menu">
                                             <li>
-                                                <NavLink
+                                                <Link
                                                     to={`/dashboard/${auth?.user?.role === 1 ? "admin" : "user"
                                                         }`}
-                                                    className="dropdown-item"
+                                                    className="nav-link dropdown-toggle"
+
+                                                    id="navbarDropdown"
+                                                    role="button"
+                                                    data-toggle="dropdown"
+                                                    aria-haspopup="true"
+                                                    aria-expanded="false"
                                                 >
                                                     Dashboard
-                                                </NavLink>
+                                                </Link>
                                             </li>
                                             <li>
-                                                <NavLink
+                                                <Link
                                                     onClick={handleLogout}
                                                     to="/login"
-                                                    className="dropdown-item"
+
+                                                    className="nav-link dropdown-toggle"
+
+                                                    id="navbarDropdown"
+                                                    role="button"
+                                                    data-toggle="dropdown"
+                                                    aria-haspopup="true"
+                                                    aria-expanded="false"
                                                 >
                                                     Logout
-                                                </NavLink>
+                                                </Link>
                                             </li>
-                                        </ul> */}
+                                        </ul>
                                     </li>
-                                    <li className="nav-item">
+                                    {/* <li className="nav-item">
                                         <NavLink onClick={handleLogout} to="/login" className="nav-link ">
                                             LogOut
                                         </NavLink>
@@ -139,7 +158,7 @@ const Header = () => {
                                             }`} className="nav-link">
                                             Dashboard
                                         </NavLink>
-                                    </li>
+                                    </li> */}
                                 </>
                             )}
                             <li className="nav-item">
